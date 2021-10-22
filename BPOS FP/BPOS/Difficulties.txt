@@ -1,0 +1,23 @@
+1. Thinking of the system requirements in a way such that it can be implemeneted using design pattern
+2. Observer Pattern: In the project, there are two places where we used observer pattern:
+  * author - publisher
+  * publisher - system
+
+  In first author - publiser, auther is producer and publisher is observer i.e., when author writes a book, it will tell all the subscribed publishers that i have written the book. Now, you can publish  
+  and in second, publisher - system publisher is producer and system is observer i.e., when publisher publish the books, it will tell all the subscribed systems that i have published the books. Now, you can make it available in your store.
+
+3. Decorator pattern: In the project, there is one decorator pattern. When someone places the order, he can add delivery option or gift pack option. There will be some charge which will add in the amount according to the chosen options.
+
+4. State.State Pattern: In this, there is one state pattern, It will work in giving discounts to people. Like there are 3 type of states: silver, gold and platinum
+  * Silver offers 5% discount
+  * Gold offers 10% discount
+  * Platinum offers 15% offers
+
+  State.State will be decided according to the number of order person has placed from the system like:
+  * if he placed more than 10 and less than 20 orders, he will be in Silver state.
+  * if he placed more than 20 and less than 30 orders, he will be in Gold state.
+  * if he placed more than 30, he will be in Platinum state.
+
+5. Factory Design pattern: In this, there is Factory design pattern which is used for creating objects of persons and states based upon the inputs.
+
+6. Faced some difficulties while implementing  design patterns because it was quite complex in implementing in this kind of project But by using our course book and by referring the Git link of Geoserver helped me to implement the project with all design patterns.
